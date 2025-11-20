@@ -8,7 +8,7 @@
     },
     
     // This command runs the web scraping script automatically after the container starts
-    "postStartCommand": "python scraper.py",
+    "postStartCommand": "python src/scraper.py",
     
     // Keep the container running for interactive use after the script finishes
     "shutdownAction": "none",

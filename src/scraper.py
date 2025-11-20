@@ -2,10 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import time
+import os
+
+os.makedirs("data", exist_ok=True)
 
 # Target the first catalog page
 URL = "http://books.toscrape.com/catalogue/page-1.html" 
-OUTPUT_FILE = "books_data.csv"
+OUTPUT_FILE = "data/books_data.csv"
 
 def scrape_website(url):
     """

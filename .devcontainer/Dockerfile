@@ -6,6 +6,6 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY scraper.py .
+COPY src/ ./src/
 
-CMD ["python", "scraper.py"]
+CMD ["python", "src/scraper.py"]
