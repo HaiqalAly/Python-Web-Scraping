@@ -104,6 +104,24 @@ docker run --rm -v ${PWD}/data:/app/data web-scraper
 ```
 This mounts your local data/ folder so the CSV appears outside the container.
 
+## 3. Run Using VS Code Dev Containers 🧩
+
+### Requirements
+* VS Code
+* Dev Container Extension
+* Docker
+
+### Steps
+- Open the project folder in VS Code
+- Press Ctrl+Shift+P → Reopen in Container
+- VS Code will auto-build the container
+
+The scraper auto-runs because of this setting in `.devcontainer.json`:
+```
+"postStartCommand": "python src/scraper.py"
+```
+CSV output will appear inside the data/ folder.
+
 ---
 
 ## ⚠️ Troubleshooting
